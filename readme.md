@@ -269,5 +269,48 @@ Options of detached head:
 - checking [ssh keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)
 - generating [new ssh key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
+*View git remote:*
+
+`git remote`
+`git remote -v`
+`git remote add origin <url>`
+`git remote rename <old url> <new url>`
+`git remote remove <url>`
+
+*Git push:*
+
+`git push <remote> <branch>`
+
+ex:
+
+`git push origin master`
+
+*Git push remote with other branch*
+
+`git push <remote> <local-branch>:<remote-branch>`
+
+ex:
 
 
+`git push origin pancake:waffle`
+
+*Git push origin with -u flag or up stream flag:*
+
+`git push -u <remote> <branch-name>`
+`git push -u <remote> <local-branch-name>:<remote-branch-name>`
+
+ex:
+
+`git push -u origin master`
+
+after this link is made between local master and remote master and when ever we push without branch name it will automatically map upstream to remote master branch.
+
+`git push origin`
+
+Above will push automatically to master branch.
+
+*Branch rename:*
+
+`git branch -M <new-branch-name>`
+
+above will rename current branch name to new branch name
